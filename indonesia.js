@@ -1486,7 +1486,7 @@ exports.stcmenu = (prefix) =>{
 ▸ ${prefix}popoci
 ▸ ${prefix}sponsbob
 ▸ ${prefix}kawan_sponsbob
-╰❒ ${prefix}tyni
+╰❒
 `}
 
 exports.ephotomenu = (prefix) =>{
@@ -1521,7 +1521,36 @@ exports.ephotomenu = (prefix) =>{
 ▸ #goldplaybutton
 ▸ #silverplaybutton
 ▸ #freefire
-╰❒ ${prefix}juventusshirt text|text2`
+╰❒`
+}
+
+exports.ephotomenu = (prefix) =>{
+	return`╭─❒ 「 Photooxy Menu 」
+▸ #shadow
+▸ #cup
+▸ #cup1
+▸ #romance
+▸ #smoke
+▸ #burnpaper
+▸ #lovemessage
+▸ #undergrass
+▸ #love
+▸ #coffe
+▸ #woodheart
+▸ #woodenboard
+▸ #summer3d
+▸ #wolfmetal
+▸ #nature3d
+▸ #underwater
+▸ #golderrose
+▸ #summernature
+▸ #letterleaves
+▸ #glowingneon
+▸ #fallleaves
+▸ #flamming
+▸ #harrypotter
+▸ #carvedwood
+╰❒`
 }
 
 exports.logomenu = (prefix) =>{

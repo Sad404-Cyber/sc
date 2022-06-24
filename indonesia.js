@@ -1,56 +1,56 @@
 exports.private = () =>{
-	return`Fitur hanya bisa di gunakan di private chat`
+	return`*「❗」ONLY PRIVATE CHAT*`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `*「❗」MOHON TUNGGU SEBENTAR*`
 }
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `*「✅」DONE*`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `*「❗」FITUR EROR ATAU MAINTANCE*`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `*「❗」LINK TIDAK VALID ATAU EROR*`
 }
 exports.media = () => {
-    return `Silahkan pilih media yang ingin kamu download`
+    return `*Silahkan pilih media yang ingin kamu download*`
 }
 exports.replyImg = (prefix, command) => {
-    return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
+    return `*Kirim/Reply Foto Dengan Caption ${prefix + command}*`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `*「❗」FORMAT SALAH*`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
+    return `*「❗」MASUKAN PESAN YANG INGIN DISAMPAIKAN*`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
-    return `❎ Command *${cmd}* tidak terdaftar di *${prefix}allmenu*`
+    return `*「❗」COMMAND ${command} TIDAK TERSEDIA DIDALAM MENU*`
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner`
+    return `*「❗」ONLY OWNER*`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `*「✅」DONE OWNER*`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `*「❗」ONLY GROUP*`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `*「❗」ONLY ADMIN GROUP*`
 }
 
 exports.nhFalse = () => {
-    return `Kode tidak valid!`
+    return `*「❗」KODE TIDAK VALID ATAU INVALID*`
 }
 
 exports.listBlock = (blockNumber) => {
@@ -60,15 +60,15 @@ Total diblokir: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `*「❗」USER BUKAN ADMIN*`
 }
 
 exports.adminAlready = () => {
-    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
+    return `*「❗」TIDAK BISA MEMPROMOTE USER YANG SUDAH MENJADI ADMIN*`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `*「❗」JADIKAN BOT ADMIN TERLEBIH DAHULU*`
 }
 
 exports.received = (pushname) => {
@@ -78,11 +78,11 @@ Terima kasih telah melapor, laporanmu akan kami segera terima.`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `*「❗」UKURAN ATAU SIZE FILE TERLALU BESAR*`
 }
 
 exports.notNum = (q) => {
-    return `"${q}", bukan angka!`
+    return `"${q}", *「❗」MASUKAN TEXT BUKAN ANGKA*`
 }
 exports.menunya = (salam, pushname, botname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 

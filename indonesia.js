@@ -1499,91 +1499,36 @@ exports.stcmenu = (prefix) =>{
 
 exports.ephotomenu = (prefix) =>{
 	return`╭─❒ 「 Ephoto360 Menu 」
-▸ ${prefix}youtubegold text
-▸ ${prefix}youtubesilver text
-▸ ${prefix}facebookgold text
-▸ ${prefix}facebooksilver text
-▸ ${prefix}instagramgold text
-▸ ${prefix}instagramsilver text
-▸ ${prefix}twittergold text
-▸ ${prefix}twittersilver text
-▸ ${prefix}retrotext text
-▸ ${prefix}halloweenbats text
-▸ ${prefix}texthalloween text
-▸ ${prefix}cardhalloween text
-▸ ${prefix}birthdaycake text
-▸ ${prefix}thundertext text
-▸ ${prefix}icetext text
-▸ ${prefix}milkcake text
-▸ ${prefix}snowontext text
-▸ ${prefix}metalstar text
-▸ ${prefix}dragonfire text
-▸ ${prefix}zombie3d text
-▸ ${prefix}merrycard text
-▸ ${prefix}generalexam text 
-▸ ${prefix}viettel text
-▸ ${prefix}embroider text
-▸ ${prefix}graffititext text
-▸ ${prefix}graffititext2 text
-▸ ${prefix}graffititext3 text
-▸ ${prefix}covergraffiti text
-▸ ${prefix}moderngold text
-▸ ${prefix}capercut text
-▸ ${prefix}lovecard text
-▸ ${prefix}heartflashlight text
-▸ ${prefix}heartcup text
-▸ ${prefix}sunglightshadow text
-▸ ${prefix}graffiti3d text
-▸ ${prefix}moderngoldsilver text
-▸ ${prefix}moderngold2 text
-▸ ${prefix}moderngold3 text
-▸ ${prefix}fabrictext text
-▸ ${prefix}masteryavatar text
-▸ ${prefix}messagecoffee text
-▸ ${prefix}announofwin text
-▸ ${prefix}writeblood text
-▸ ${prefix}horrorletter text
-▸ ${prefix}writehorror text
-▸ ${prefix}shirtclub text
-▸ ${prefix}angelwing text
-▸ ${prefix}christmasseason text
-▸ ${prefix}projectyasuo text
-▸ ${prefix}lovelycute text
-▸ ${prefix}womansday text
-▸ ${prefix}covergamepubg text
-▸ ${prefix}nameonheart text
-▸ ${prefix}funnyhalloween text
-▸ ${prefix}lightningpubg text
-▸ ${prefix}greetingcardvideo text 
-▸ ${prefix}christmascard text 
-▸ ${prefix}galaxybat text
-▸ ${prefix}writegalaxy text
-▸ ${prefix}starsnight text
-▸ ${prefix}noeltext text
-▸ ${prefix}textcakes text
-▸ ${prefix}pubgbirthday text
-▸ ${prefix}galaxywallpaper text
-▸ ${prefix}pubgglicthvideo text 
-▸ ${prefix}pubgmascotlogo text
-▸ ${prefix}realembroidery text
-▸ ${prefix}vintagetelevision text
-▸ ${prefix}funnyanimations text
-▸ ${prefix}glowingtext text
-▸ ${prefix}textonglass text
-▸ ${prefix}cartoonstyle text
-▸ ${prefix}multicolor text
-▸ ${prefix}watercolor2 text
-▸ ${prefix}textsky text
-▸ ${prefix}summerbeach text
-▸ ${prefix}1917text text
-▸ ${prefix}puppycute text
-▸ ${prefix}rosebirthday text
-▸ ${prefix}steellettering text|text2
-▸ ${prefix}letterstext text|text2
-▸ ${prefix}barcashirt text|text2
-▸ ${prefix}premiercup text|text2
-▸ ${prefix}stylepoligon text|text2
-▸ ${prefix}lifebuoys text|text2
+▸ #wetglass
+▸ #multicolor3d
+▸ #watercolor
+▸ #luxurygold
+▸ #galaxywallpaper
+▸ #lighttext
+▸ #beautifulflower
+▸ #puppycute
+▸ #royaltext
+▸ #heartshaped
+▸ #birthdaycake
+▸ #galaxystyle
+▸ #hologram3d
+▸ #greenneon
+▸ #glossychrome
+▸ #greenbush
+▸ #metallogo
+▸ #noeltext
+▸ #glittergold
+▸ #textcake
+▸ #starsnight
+▸ #wooden3d
+▸ #textbyname
+▸ #writegalacy
+▸ #galaxybat
+▸ #snow3d
+▸ #birthdayday
+▸ #goldplaybutton
+▸ #silverplaybutton
+▸ #freefire
 ╰❒ ${prefix}juventusshirt text|text2`
 }
 

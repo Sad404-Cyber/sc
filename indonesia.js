@@ -1524,7 +1524,7 @@ exports.ephotomenu = (prefix) =>{
 ╰❒`
 }
 
-exports.ephotomenu = (prefix) =>{
+exports.photooxy = (prefix) =>{
 	return`╭─❒ 「 Photooxy Menu 」
 ▸ #shadow
 ▸ #cup

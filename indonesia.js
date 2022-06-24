@@ -85,8 +85,9 @@ exports.notNum = (q) => {
     return `"${q}", *「❗」MASUKAN TEXT BUKAN ANGKA*`
 }
 exports.menunya = (salam, pushname, botname) =>{
-	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp.
+	return`Selamat ${salam} Member ${pushname} ❤️, 
+Aku Adalah *${botname}*, Aku Adalah Bot Beta Multi-Device WhatsApp.
+Jika Ada Kesalahan Atau Bug Padaku Silahkan Lapor Ownerku Yaa!!
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {

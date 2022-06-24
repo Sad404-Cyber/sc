@@ -93,7 +93,7 @@ Jika Ada Kesalahan Atau Bug Padaku Silahkan Lapor Ownerku Yaa!!
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time : ${time}*
-*🧾 List-Menu Abdillah-Botx :*
+*🧾 List-Menu Abdillah-Botz :*
 
 ╭─❒ 「 Bot Info 」 
 ▸ ${prefix}owner

@@ -92,8 +92,8 @@ Jika Ada Kesalahan Atau Bug Padaku Silahkan Lapor Ownerku Yaa!!
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
-*⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*⌚Time : ${time}*
+*🧾 List-Menu Abdillah-Botx :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner

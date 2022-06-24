@@ -838,8 +838,8 @@ if (!m.isGroup) return reply(lang.groupOnly())
             var but = [
           {
             "urlButton": {
-              "displayText": "YouTube Creator",
-              "url": `${youtube}`
+              "displayText": "Instagram Creator",
+              "url": `${instagram}`
             }
           },
           {

@@ -929,7 +929,7 @@ break
                 st += `Price : ${x.priceText}\n`
                 st += `Price : ${x.price}\n\n`
             }
-            reply(text)
+            reply(st)
             break
         case 'shopee':
             if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
@@ -942,7 +942,7 @@ break
                 pe += `Lokasi : ${x.shop_loc}\n`
                 pe += `Link : ${x.link_produk}\n\n`
             }
-            reply(text)
+            reply(st)
             break
         case 'google':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
@@ -953,7 +953,7 @@ break
                 gog += `Link : ${x.link}\n`
                 gog += `Desc : ${x.desc}\n\n`
             }
-            reply(text)
+            reply(gog)
             break
 
             case 'anime':{

@@ -18,7 +18,7 @@
 
 
 require('./settings')
-const { default: makeWASocket, BufferJSON, WAMessageStubType, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia , generateWAMessage, areJidsSameUser, makeInMemoryStore} = require('@adiwajshing/baileys')
+const { default: makeWAAlphaet, BufferJSON, WAMessageStubType, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia , generateWAMessage, areJidsSameUser, makeInMemoryStore} = require('@adiwajshing/baileys')
 const translate = require('@vitalets/google-translate-api')
 const fs = require('fs')
 const util = require('util')
@@ -901,20 +901,20 @@ break
             if (command === 'wallpapersearch') {
                 command = 'wallpaper'
             }
-            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=${apikey}&query=${full_args}` } })
+            Alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=${apikey}&query=${full_args}` } })
             break
         case 'gimage2':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             axios.get(`https://api.lolhuman.xyz/api/gimage2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
                 for (var x of data.result.slice(0, 5)) {
-                    sock.sendMessage(from, { image: { url: x } })
+                    Alpha.sendMessage(from, { image: { url: x } })
                 }
             })
             break
         case 'wallpapersearch2':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             axios.get(`https://api.lolhuman.xyz/api/wallpaper2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
-                sock.sendMessage(from, { image: { url: data.result } })
+                Alpha.sendMessage(from, { image: { url: data.result } })
             })
             break
         case 'playstore':
@@ -1672,8 +1672,8 @@ case 'ytplay':
                     axios.get(`https://api.lolhuman.xyz/api/ytaudio2?apikey=sayajiro&url=https://www.youtube.com/watch?v=${data.result[0].videoId}`).then(({ data }) => {
                         var caption = `❖ Title    : *${data.result.title}*\n`
                         caption += `❖ Size     : *${data.result.size}*`
-                        sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
-                            sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                        Alpha.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                            Alpha.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
                         })
                     })
                 })
@@ -1703,8 +1703,8 @@ case 'ytplay':
                 .then(({ data }) => {
                     var caption = `❖ Title    : *${data.result.title}*\n`
                     caption += `❖ Size     : *${data.result.size}*`
-                    sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
-                        sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                    Alpha.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                        Alpha.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
                     })
                 })
                 .catch(console.error)
@@ -1716,8 +1716,8 @@ case 'ytplay':
                 .then(({ data }) => {
                     var caption = `❖ Title    : *${data.result.title}*\n`
                     caption += `❖ Size     : *${data.result.size}*`
-                    sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
-                        sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'video/mp4', fileName: `${data.result.title}.mp4` })
+                    Alpha.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                        Alpha.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'video/mp4', fileName: `${data.result.title}.mp4` })
                     })
                 })
                 .catch(console.error)
@@ -1725,18 +1725,18 @@ case 'ytplay':
         case 'telesticker':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
             axios.get(`https://api.lolhuman.xyz/api/telestick?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
-                sock.sendMessage(from, { sticker: { url: data.result.sticker.random() } })
+                Alpha.sendMessage(from, { sticker: { url: data.result.sticker.random() } })
             })
             break
         case 'tiktoknowm':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
             axios.get(`https://api.lolhuman.xyz/api/tiktok?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
-                sock.sendMessage(from, { video: { url: data.result.link }, mimetype: 'video/mp4' })
+                Alpha.sendMessage(from, { video: { url: data.result.link }, mimetype: 'video/mp4' })
             })
             break
         case 'tiktokmusic':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
-            sock.sendMessage(from, { audio: { url: `https://api.lolhuman.xyz/api/tiktokmusic?apikey=sayajiro&url=${args[0]}` }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+            Alpha.sendMessage(from, { audio: { url: `https://api.lolhuman.xyz/api/tiktokmusic?apikey=sayajiro&url=${args[0]}` }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
             break
         case 'spotify':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://open.spotify.com/track/0ZEYRVISCaqz5yamWZWzaA`)
@@ -1746,8 +1746,8 @@ case 'ytplay':
                 caption += `Duration : ${data.result.duration}\n`
                 caption += `Popularity : ${data.result.popularity}\n`
                 caption += `Preview : ${data.result.preview_url}\n`
-                sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
-                    sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                Alpha.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                    Alpha.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
                 })
             })
             break
@@ -1774,8 +1774,8 @@ case 'ytplay':
                 caption += `Album : ${data.result.info.album}\n`
                 caption += `Uploaded : ${data.result.info.date}\n`
                 caption += `Lirik :\n ${data.result.lirik}\n`
-                sock.sendMessage(from, { image: { url: data.result.image }, caption }).then(() => {
-                    sock.sendMessage(from, { audio: { url: data.result.audio[0].link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                Alpha.sendMessage(from, { image: { url: data.result.image }, caption }).then(() => {
+                    Alpha.sendMessage(from, { audio: { url: data.result.audio[0].link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
                 })
             })
             break
@@ -1784,9 +1784,9 @@ case 'ytplay':
             axios.get(`https://api.lolhuman.xyz/api/instagram?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
                 var url = data.result
                 if (url.includes('.mp4')) {
-                    sock.sendMessage(from, { video: { url }, mimetype: 'video/mp4' })
+                    Alpha.sendMessage(from, { video: { url }, mimetype: 'video/mp4' })
                 } else {
-                    sock.sendMessage(from, { image: { url } })
+                    Alpha.sendMessage(from, { image: { url } })
                 }
             })
             break
@@ -1795,9 +1795,9 @@ case 'ytplay':
             axios.get(`https://api.lolhuman.xyz/api/instagram2?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
                 for (var x of data.result) {
                     if (x.includes('.mp4')) {
-                        sock.sendMessage(from, { video: { url: x }, mimetype: 'video/mp4' })
+                        Alpha.sendMessage(from, { video: { url: x }, mimetype: 'video/mp4' })
                     } else {
-                        sock.sendMessage(from, { image: { url: x } })
+                        Alpha.sendMessage(from, { image: { url: x } })
                     }
                 }
             })
@@ -1805,13 +1805,13 @@ case 'ytplay':
         case 'twtdl':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`)
             axios.get(`https://api.lolhuman.xyz/api/twitter?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
-                sock.sendMessage(from, { video: { url: data.result.link[data.result.link.length - 1].link }, mimetype: 'video/mp4' })
+                Alpha.sendMessage(from, { video: { url: data.result.link[data.result.link.length - 1].link }, mimetype: 'video/mp4' })
             })
             break
         case 'fbdl':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://id-id.facebook.com/SamsungGulf/videos/video-bokeh/561108457758458/`)
             axios.get(`https://api.lolhuman.xyz/api/facebook?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
-                sock.sendMessage(from, { video: { url: data.result }, mimetype: 'video/mp4' })
+                Alpha.sendMessage(from, { video: { url: data.result }, mimetype: 'video/mp4' })
             })
             break
         case 'zippyshare':
@@ -1827,30 +1827,30 @@ case 'ytplay':
         case 'pinterest':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             axios.get(`https://api.lolhuman.xyz/api/pinterest?apikey=sayajiro&query=${full_args}`).then(({ data }) => {
-                sock.sendMessage(from, { image: { url: data.result } })
+                Alpha.sendMessage(from, { image: { url: data.result } })
             })
             break
         case 'pinterest2':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             axios.get(`https://api.lolhuman.xyz/api/pinterest2?apikey=sayajiro&query=${full_args}`).then(({ data }) => {
                 for (var x of data.result.slice(0, 5)) {
-                    sock.sendMessage(from, { image: { url: x } })
+                    Alpha.sendMessage(from, { image: { url: x } })
                 }
             })
             break
         case 'pinterestdl':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://id.pinterest.com/pin/696580267364426905/`)
             axios.get(`https://api.lolhuman.xyz/api/pinterestdl?apikey=sayajiro&url=${args[0]}`).then(({ data }) => {
-                sock.sendMessage(from, { image: { url: data.result[0] } })
+                Alpha.sendMessage(from, { image: { url: data.result[0] } })
             })
             break
         case 'pixiv':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
-            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixiv?apikey=sayajiro&query=${full_args}` } })
+            Alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixiv?apikey=sayajiro&query=${full_args}` } })
             break
         case 'pixivdl':
             if (args.length == 0) return reply(`Example: ${prefix + command} 63456028`)
-            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixivdl/${args[0]}?apikey=sayajiro` } })
+            Alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixivdl/${args[0]}?apikey=sayajiro` } })
             break
 
 			case 'nomerhoki': case 'nomorhoki': {

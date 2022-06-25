@@ -811,23 +811,23 @@ if (!m.isGroup) return reply(lang.groupOnly())
     }
  break
       
-//Random Anime
-				case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
-					reply(lang.wait())
-					axios.get(`https://api.waifu.pics/sfw/${command}`)
-					.then(({data}) => {
-						alpha.sendMediaAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
+      // Random Image //
+        case 'art':
+        case 'bts':
+        case 'exo':
+        case 'elf':
+        case 'loli':
+        case 'neko':
+        case 'waifu':
+        case 'shota':
+        case 'husbu':
+        case 'sagiri':
+        case 'shinobu':
+        case 'megumin':
+        case 'wallnime':
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/${command}?apikey=${apikey}` } })
+            break
 
-
-					})
-					break
-				case 'waifu': case 'loli':
-					reply(lang.wait())
-					axios.get(`https://api.waifu.pics/sfw/waifu`)
-					.then(({data}) => {
-					alpha.sendImage(m.chat, data.url, lang.ok(), m)
-					})
-					break
 case 'stikerin':case 's': case 'sticker': case 'stiker': {
 if (!quoted) return reply(`Kirim/Reply Gambar/Video Dengan Caption ${prefix + command}\n\nDurasi Sticker Video 1-9 Detik☕`)
 if (/image/.test(mime)) {

@@ -893,7 +893,69 @@ break
             alpha.sendMessage(m.chat, {audio: audio, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
             }
             break        
-           
+           // Searching
+        case 'gimage':
+        case 'konachan':
+        case 'wallpapersearch':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            if (command === 'wallpapersearch') {
+                command = 'wallpaper'
+            }
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=${apikey}&query=${full_args}` } })
+            break
+        case 'gimage2':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            axios.get(`https://api.lolhuman.xyz/api/gimage2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                for (var x of data.result.slice(0, 5)) {
+                    sock.sendMessage(from, { image: { url: x } })
+                }
+            })
+            break
+        case 'wallpapersearch2':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            axios.get(`https://api.lolhuman.xyz/api/wallpaper2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                sock.sendMessage(from, { image: { url: data.result } })
+            })
+            break
+        case 'playstore':
+            if (args.length == 0) return reply(`Example: ${prefix + command} telegram`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/playstore?apikey=${apikey}&query=${full_args}`)
+            var text = 'Play Store Search : \n'
+            for (var x of data.result) {
+                text += `Name : ${x.title}\n`
+                text += `ID : ${x.appId}\n`
+                text += `Developer : ${x.developer}\n`
+                text += `Link : ${x.url}\n`
+                text += `Price : ${x.priceText}\n`
+                text += `Price : ${x.price}\n\n`
+            }
+            reply(text)
+            break
+        case 'shopee':
+            if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/shopee?apikey=${apikey}&query=${full_args}`)
+            var text = 'Shopee Search : \n'
+            for (var x of data.result) {
+                text += `Name : ${x.name}\n`
+                text += `Terjual : ${x.sold}\n`
+                text += `Stock : ${x.stock}\n`
+                text += `Lokasi : ${x.shop_loc}\n`
+                text += `Link : ${x.link_produk}\n\n`
+            }
+            reply(text)
+            break
+        case 'google':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/gsearch?apikey=${apikey}&query=${full_args}`)
+            var text = 'Google Search : \n'
+            for (var x of data.result) {
+                text += `Title : ${x.title}\n`
+                text += `Link : ${x.link}\n`
+                text += `Desc : ${x.desc}\n\n`
+            }
+            reply(text)
+            break
+
             case 'anime':{
                 if (!q) return reply(lang.wrongFormat(prefix))
                 await reply(lang.wait())

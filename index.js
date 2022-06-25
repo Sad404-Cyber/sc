@@ -2202,6 +2202,7 @@ case 'chiisaihentai':
         case 'biganimetiddies':
         case 'animebellybutton':
         case 'hentai4everyone':
+        if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
             sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${apikey}` } })
             break
 

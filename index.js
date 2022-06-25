@@ -901,11 +901,11 @@ break
             if (command === 'wallpapersearch') {
                 command = 'wallpaper'
             }
-            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=${apikey}&query=${full_args}` } })
+            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/${command}?apikey=sayajiro&query=${full_args}` } })
             break
         case 'gimage2':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
-            axios.get(`https://api.lolhuman.xyz/api/gimage2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+            axios.get(`https://api.lolhuman.xyz/api/gimage2?apikey=sayajiro&query=${full_args}`).then(({ data }) => {
                 for (var x of data.result.slice(0, 5)) {
                     alpha.sendMessage(from, { image: { url: x } })
                 }
@@ -913,13 +913,13 @@ break
             break
         case 'wallpapersearch2':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
-            axios.get(`https://api.lolhuman.xyz/api/wallpaper2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+            axios.get(`https://api.lolhuman.xyz/api/wallpaper2?apikey=sayajiro&query=${full_args}`).then(({ data }) => {
                 alpha.sendMessage(from, { image: { url: data.result } })
             })
             break
         case 'playstore':
             if (args.length == 0) return reply(`Example: ${prefix + command} telegram`)
-            var { data } = await axios.get(`https://api.lolhuman.xyz/api/playstore?apikey=${apikey}&query=${full_args}`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/playstore?apikey=sayajiro&query=${full_args}`)
             var st = 'Play Store Search : \n'
             for (var x of data.result) {
                 st += `Name : ${x.title}\n`
@@ -933,7 +933,7 @@ break
             break
         case 'shopee':
             if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
-            var { data } = await axios.get(`https://api.lolhuman.xyz/api/shopee?apikey=${apikey}&query=${full_args}`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/shopee?apikey=sayajiro&query=${full_args}`)
             var pe = 'Shopee Search : \n'
             for (var x of data.result) {
                 pe += `Name : ${x.name}\n`
@@ -946,7 +946,7 @@ break
             break
         case 'google':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
-            var { data } = await axios.get(`https://api.lolhuman.xyz/api/gsearch?apikey=${apikey}&query=${full_args}`)
+            var { data } = await axios.get(`https://api.lolhuman.xyz/api/gsearch?apikey=sayajiro&query=${full_args}`)
             var gog = 'Google Search : \n'
             for (var x of data.result) {
                 gog += `Title : ${x.title}\n`

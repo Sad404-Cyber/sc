@@ -2252,10 +2252,43 @@ case 'chiisaihentai':
             alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random2/${command}?apikey=sayajiro` } })
             break
 
-case 'sewabot': case 'sewa': case 'buypremium': {
-                alpha.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/7168c92bfa11b6029d47b.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n List Harga SewaBot\n⭔ 10k Per Group via 1 Month\n⭔ 15k  Permanen\n\n Harga Premium Bot\n⭔ 8k per User 1 bulan\n\nPembayaran Bisa Melalui via Dana/Ovo/Gopay\n\nFor more details, you can chat with the owner\nhttps://wa.me/628895656884 (Hafidz)\n\nDonate For Me : \n\n⭔ Saweria : https://saweria.co/AbdillahBot` }, { quoted: m })
+case 'sewabot': case 'sewa':{
+            var but = [
+          {
+            "urlButton": {
+              "displayText": "Instagram Creator",
+              "url": `${instagram}`
             }
-            break
+          },
+          {
+            "urlButton": {
+              "displayText": "Rest Api's",              
+              "url": `${myweb}`
+
+            }
+          },
+          {
+            "quickReplyButton": {
+              "displayText": "Rules",
+"id": 'rules'
+            }
+          },
+          {
+            "quickReplyButton": {
+              "displayText": "Owner",
+"id": 'owner'
+            }
+          },
+{
+            "quickReplyButton": {
+              "displayText": "List Command",
+"id": 'command'
+            }
+          }
+        ]
+        await alpha.send5ButImg(from, lang.sewabot() , `© ${ownername}`,qris, but , { userJid: m.chat, quoted: m })
+    }
+ break
 
 //sound
 case 'sound71': case 'sound72': case 'sound73': case 'sound74': case 'sound75': case 'sound1': case 'sound2': case 'sound3': case 'sound4': case 'sound5': case 'sound6': case 'sound7': case 'sound8': case 'sound9': case 'sound10': case 'sound11': case 'sound12': case 'sound13': case 'sound14': case 'sound15': case 'sound16': case 'sound17': case 'sound18 ': case 'sound19': case 'sound20': case 'sound21': case 'sound22': case 'sound23': case 'sound24': case 'sound25': case 'sound26': case 'sound27': case 'sound28': case 'sound29': case 'sound30': case 'sound31': case 'sound32': case 'sound33': case 'sound34': case 'sound35': case 'sound36': case 'sound37': case 'sound38': case 'sound39': case 'sound40': case 'sound41': case 'sound42': case 'sound43': case 'sound44': case 'sound45': case 'sound46': case 'sound47': case 'sound48': case 'sound49': case 'sound50': case 'sound51': case 'sound52': case 'sound53': case 'sound54': case 'sound55': case 'sound56': case 'sound57': case 'sound58': case 'sound59': case 'sound60': case 'sound61': case 'sound62': case 'sound63': case 'sound64': case 'sound65': case 'sound66': case 'sound67': case 'sound68': case 'sound69': case 'sound70':{

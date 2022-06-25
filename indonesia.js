@@ -205,7 +205,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╭─❒ 「 Stalking 」 
 ▸ #igstalk [username]
 ▸ #ghstalk [username]
-▸ #ytstalk [channel]
+▸ #twitstalk [username]
+▸ #tiktokstalk [username]
 ╰❒ 
 
 ╭─❒ 「 Search 」 

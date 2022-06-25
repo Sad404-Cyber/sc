@@ -211,12 +211,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╭─❒ 「 Search 」 
 ▸ #ytsearch [query]
 ▸ #wallpaper [query]
+▸ #wallpaper2 [query]
 ▸ #google [query]
-▸ #wikimedia [query]
-▸ #hentai
-▸ #wattpad [query]
-▸ #webtoons [query]
-▸ #drakor [query]
+▸ #playstore [query]
 ▸ #pinterest [query]
 ╰❒ 
 

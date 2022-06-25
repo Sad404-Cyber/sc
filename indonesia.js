@@ -200,7 +200,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #ghstalk [username]
 ╰❒ ▸ #ytstalk [channel]
 
-
 ╭─❒ 「 Search 」 
 ▸ #ytsearch [query]
 ▸ #wallpaper [query]
@@ -212,7 +211,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #drakor [query]
 ╰❒ ▸ #pinterest [query]
 
-
 ╭─❒ 「 Converter 」
 ▸ #toaudio [video]
 ▸ #tomp3 [video]
@@ -222,66 +220,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #togif [sticker]
 ▸ #tomp4 [sticker]
 ╰❒▸ #toimg [reply sticker]
-
-
-╭─❒ 「 Image Effect 」 
-▸ #wanted [reply image/stiker]
-▸ #utatoo [reply image/stiker]
-▸ #unsharpen [reply image/stiker]
-▸ #thanos [reply image/stiker]
-▸ #sniper [reply image/stiker]
-▸ #sharpen [reply image/stiker]
-▸ #sepia [reply image/stiker]
-▸ #scary [reply image/stiker]
-▸ #rip [reply image/stiker]
-▸ #redple [reply image/stiker]
-▸ #rejected [reply image/stiker]
-▸ #posterize [reply image/stiker]
-▸ #ps4 [reply image/stiker]
-▸ #pixelize [reply image/stiker]
-▸ #missionpassed [reply image/stiker]
-▸ #moustache [reply image/stiker]
-▸ #lookwhatkarenhave [reply image/stiker]
-▸ #jail [reply image/stiker]
-▸ #invert [reply image/stiker]
-▸ #instagram [reply image/stiker]
-▸ #greyscale [reply image/stiker]
-▸ #glitch [reply image/stiker]
-▸ #gay [reply image/stiker]
-▸ #frame [reply image/stiker]
-▸ #fire [reply image/stiker]
-▸ #distort [reply image/stiker]
-▸ #dictator [reply image/stiker]
-▸ #deepfry [reply image/stiker]
-▸ #ddungeon [reply image/stiker]
-▸ #circle [reply image/stiker]
-▸ #challenger [reply image/stiker]
-▸ #burn [reply image/stiker]
-▸ #brazzers [reply image/stiker]
-╰❒ ▸ #beautiful [reply image/stiker]
-
-
-╭─❒ 「 Sticker Effect 」 
-▸ #jail [reply image/stiker]
-▸ #red [reply image/stiker]
-▸ #gay [reply image/stiker]
-▸ #bloo [reply image/stiker]
-▸ #blue [reply image/stiker]
-▸ #sepia [reply image/stiker]
-▸ #green [reply image/stiker]
-▸ #glass [reply image/stiker]
-▸ #invert [reply image/stiker]
-▸ #blurple [reply image/stiker]
-▸ #blurple2 [reply image/stiker]
-▸ #wasted [reply image/stiker]
-▸ #passed [reply image/stiker]
-▸ #triggered [reply image/stiker]
-▸ #comrade [reply image/stiker]
-▸ #greyscale [reply image/stiker]
-▸ #threshold [reply image/stiker]
-▸ #brightness [reply image/stiker]
-╰❒ ▸ #invertgreyscale [reply image/stiker]
-
 
 ╭─❒ 「 Download 」 
 ▸ #ytplay
@@ -484,7 +422,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #freefire
 ╰❒ 
  
- 
 ╭─❒ 「 Photooxy Menu 」
 ▸ #shadow
 ▸ #cup
@@ -511,7 +448,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #harrypotter
 ▸ #carvedwood
 ╰❒
-
 
 ╭─❒ 「 Textpro Menu 」
 ▸ #blackpink
@@ -548,7 +484,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #thunder
 ╰❒ 
 
-
 ╭─❒ 「 Others 」
 ▸ #afk [reason]
 ▸ #translate kode_bahasa text
@@ -564,7 +499,6 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #tekateki
 ▸ #susunkata
 ╰❒ ▸ #caklontong
-
 
 ╭─❒ 「 Asupan Menu 」
 ▸ #chika

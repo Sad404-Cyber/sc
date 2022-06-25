@@ -214,6 +214,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #wallpaper2 [query]
 ▸ #google [query]
 ▸ #playstore [query]
+▸ #shopee [query]
 ▸ #pinterest [query]
 ╰❒ 
 

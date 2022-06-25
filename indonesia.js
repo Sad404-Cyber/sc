@@ -102,7 +102,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #ping
 ▸ #runtime
 ▸ #botstatus
-╰❒ ▸ #donate
+▸ #donate
+╰❒ 
 
 
 ╭─❒ 「 Owner 」 
@@ -133,7 +134,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #self
 ▸ #public [only bot]
 ▸ #del [reply pesan bot]
-╰❒ ▸ #setppbot [reply image]
+▸ #setppbot [reply image]
+╰❒ 
 
 ╭─❒ 「 Store Menu 」
 ▸ #list
@@ -147,7 +149,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #kurang
 ▸ #kalkulator
 ▸ #proses
-╰❒ ▸ #done [surah|ayat]
+▸ #done [surah|ayat]
+╰❒ 
 
 
 ╭─❒ 「 Database 」 
@@ -161,7 +164,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #addmsg [nama file]
 ▸ #getmsg [nama file]
 ▸ #listmsg
-╰❒ ▸ #delmsg [nama file]
+▸ #delmsg [nama file]
+╰❒ 
 
 
 ╭─❒ 「 Group 」 
@@ -181,24 +185,28 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #take packname|author
 ▸ #group [open/close]
 ▸ #tagall [text]
-╰❒ ▸ #hidetag [text]
+▸ #hidetag [text]
+╰❒ 
 
 ╭─❒ 「 Anime 」 
 ▸ #quotesanime
 ▸ #anime [query]
 ▸ #manga [query]
-╰❒ ▸ #character [query]
+▸ #character [query]
+╰❒ 
 
 ╭─❒ 「 Tag 」 
 ▸ #stickertag
 ▸ #videotag [query]
 ▸ #vntag [query]
-╰❒ ▸ #imagetag [query]
+▸ #imagetag [query]
+╰❒ 
 
 ╭─❒ 「 Stalking 」 
 ▸ #igstalk [username]
 ▸ #ghstalk [username]
-╰❒ ▸ #ytstalk [channel]
+▸ #ytstalk [channel]
+╰❒ 
 
 ╭─❒ 「 Search 」 
 ▸ #ytsearch [query]
@@ -209,7 +217,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #wattpad [query]
 ▸ #webtoons [query]
 ▸ #drakor [query]
-╰❒ ▸ #pinterest [query]
+▸ #pinterest [query]
+╰❒ 
 
 ╭─❒ 「 Converter 」
 ▸ #toaudio [video]
@@ -219,7 +228,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #tourl [image/video/stiker]
 ▸ #togif [sticker]
 ▸ #tomp4 [sticker]
-╰❒▸ #toimg [reply sticker]
+▸ #toimg [reply sticker]
+╰❒ 
 
 ╭─❒ 「 Download 」 
 ▸ #ytplay

@@ -618,20 +618,9 @@ wa.me/${ownernomer}
     `
 }
 
-exports.tos = () => {
+exports.sewabot = () => {
     return `
-*-------「 DONATE 」 -------*
-
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
-
-Thanks!
-
-Contact person Owner:
-wa.me/${ownernomer}
-
+*Hai Kak ${m.pushName}*\n\n List Harga SewaBot\n⭔ 10k Per Group via 1 Month\n⭔ 15k  Permanen\n\n Harga Premium Bot\n⭔ 8k per User 1 bulan\n\nPembayaran Bisa Melalui via Dana/Ovo/Gopay\n\nFor more details, you can chat with the owner\nhttps://wa.me/628895656884 (Hafidz)\n\nDonate For Me : \n\n⭔ Saweria : https://saweria.co/HafidzAbdillah
     `
 }
 

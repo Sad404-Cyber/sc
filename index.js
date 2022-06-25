@@ -1988,7 +1988,7 @@ break
         case 'flamming':
         case 'harrypotter':
         case 'carvedwood':
-            if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
+            if (!text) return reply(`Ex: ${prefix + command} nama\nUsage: ${prefix + command} Hafidz Abdillah`)
             alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=sayajiro&text=${text}` } })
             break
 case 'chika': case 'rikagusriani':  case 'bocil': case 'geayubi': case 'santuy': case 'ukhty': case 'asupan':  case 'delvira': case 'ayu': case 'bunga': case 'aura': case 'nisa': case 'ziva': case 'yana': case 'viona': case 'syania': case 'riri': case 'syifa': case 'mama_gina': case 'alcakenya': case 'mangayutri': {
@@ -2087,7 +2087,7 @@ reply(lang.err())
         case 'goldplaybutton':
         case 'silverplaybutton':
         case 'freefire':
-            if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
+            if (!text) return reply(`Ex: ${prefix + command} nama\nUsage: ${prefix + command} Hafidz Abdillah`)
             alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=sayajiro&text=${text}` } })
             break
 // TEXTPROME
@@ -2123,7 +2123,7 @@ reply(lang.err())
         case 'summersand':
         case 'horrorblood':
         case 'thunder': {
-                if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
+                if (!text) return reply(`Ex: ${prefix + command} nama\nUsage: ${prefix + command} Hafidz Abdillah`)
                 alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/textprome/${command}?apikey=sayajiro&text=${text}` } })
             }
             break

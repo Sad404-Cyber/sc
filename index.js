@@ -1062,52 +1062,6 @@ break
                     reply(lang.err())
                 })
             break
-            case 'soundcloud':{
-    	        if (!q) return reply(lang.wrongFormat(prefix))
-                if (!isUrl(q)) return reply(lang.wrongFormat(prefix))
-                if (!text.includes('soundcloud.com')) return reply(lang.wrongFormat(prefix))
-                await reply(lang.wait())
-				zee.SoundCloud(`${text}`).then(async (data) => {
-                    let txt = `*----「 SOUNDCLOUD DOWNLOAD 」----*\n\n`
-                    txt += `*📟 Title :* ${data.title}\n`
-                    txt += `*🎞️ Duration :* ${data.duration}\n`
-					txt += `*🛠️ Quality :* ${data.medias[1].quality}\n`
-					txt += `*🚧 Ext :* ${data.medias[0].extension}\n`
-                    txt += `*💾 Size :* ${data.medias[0].formattedSize}\n`
-                    txt += `*📚 Url Source :* ${data.url}\n\n`
-                    txt += `*Mohon tunggu sebentar kak, sedang proses pengiriman...*`
-                    let gam = await getBuffer(data.thumbnail)
-                    var but = [
-				{
-					"urlButton": {
-						"displayText": "Website",
-						"url": `${myweb}`
-						}
-					}
-				]
-				await alpha.send5ButLoc(from, txt , `© ${ownername}`,gam, but , { userJid: m.chat, quoted: m })
-                })
-                    alpha.sendMessage(from, {audio : {url : data.medias[0].url}, fileName: `${data.title}.mp3`, mimetype: 'audio/mpeg'}, {quoted: m})
-                    }
-                    break
-              
-            case 'twtdl': case 'twt': case 'twitterdl': case 'twitter':
-                if (!q) return reply(lang.wrongFormat(prefix))
-                if (!isUrl(q)) return reply(lang.wrongFormat(prefix))
-                if (!text.includes('twitter.com')) return reply(lang.wrongFormat(prefix))
-                await reply(lang.wait())
-                zee.Twitter(`${q}`).then(async data => {
-                    let txt = `*----「 TWITTER DOWNLOADER 」----*\n\n`
-                    txt += `*📫 Title :* ${data.title}\n`
-                    txt += `*📟 Quality :* ${data.medias[1].quality}\n`
-                    txt += `*💾 Size :* ${data.medias[1].formattedSize}\n`
-                    txt += `*📚 Url :* ${data.url}`
-                    sendFileFromUrl(from,data.medias[1].url,txt,m)
-                })
-                .catch((err) => {
-                    reply(lang.err())
-                })
-            break
             case 'infochat': case 'sider': {
                 if (!m.quoted) m.reply('Reply Pesan')
                 let msg = await m.getQuotedObj()

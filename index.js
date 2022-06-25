@@ -955,7 +955,12 @@ break
             }
             reply(gog)
             break
-
+        case 'pinterestsearch':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`)
+            axios.get(`https://api.lolhuman.xyz/api/pinterest?apikey=sayajiro&query=${full_args}`).then(({ data }) => {
+               alpha.sendMessage(from, { image: { url: data.result[0] } })
+            })
+            break
             case 'anime':{
                 if (!q) return reply(lang.wrongFormat(prefix))
                 await reply(lang.wait())

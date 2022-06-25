@@ -825,7 +825,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
         case 'shinobu':
         case 'megumin':
         case 'wallnime':
-            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/${command}?apikey=${apikey}` } })
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/${command}?apikey=sayajiro` } })
             break
 
 case 'stikerin':case 's': case 'sticker': case 'stiker': {
@@ -2203,7 +2203,7 @@ case 'chiisaihentai':
         case 'animebellybutton':
         case 'hentai4everyone':
         if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${apikey}` } })
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=sayajiro` } })
             break
 
         case 'bj':
@@ -2249,7 +2249,7 @@ case 'chiisaihentai':
         case 'kemonomimi':
         case 'nsfw_avatar':
            if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random2/${command}?apikey=${apikey}` } })
+            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random2/${command}?apikey=sayajiro` } })
             break
 
 //sound

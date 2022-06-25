@@ -729,68 +729,7 @@ if (!m.isGroup) return reply(lang.groupOnly())
                 })
             }
             break
-            case 'pinterest': {
-            	if (!q) return reply(lang.wrongFormat(prefix))
-                reply(lang.wait())
-                anu = await pinterest(text)
-                result = anu[Math.floor(Math.random(), anu.length)]
-                let gam = await getBuffer(result)
-				var but = [
-				{
-					"urlButton": {
-						"displayText": "Media Url",
-						"url": `${result}`
-						}
-					}
-				]
-				await alpha.send5ButImg(from, `Hasil percarian ${text}` , `© ${ownername}`,gam, but , { userJid: m.chat, quoted: m })
-				.catch((err) => {
-                    reply(lang.err())
-                })
-				}
-            break
-            case 'wallpaper': {
-            	if (!q) return reply(lang.wrongFormat(prefix))
-                reply(lang.wait())
-                wallpaper(text).then( async anu =>{
-                result = anu[Math.floor(Math.random(), anu.length)]
-                let gam = await getBuffer(result.image[0])
-				var but = [
-				{
-					"urlButton": {
-						"displayText": "Website",
-						"url": `${myweb}`
-						}
-					}
-				]
-				await alpha.send5ButImg(from, `⭔ Title : ${result.title}\n⭔ Source : ${result.source}\n⭔ Media Url : ${result.image}` , `© ${ownername}`,gam, but , { userJid: m.chat, quoted: m })
-				})
-				.catch((err) => {
-                    reply(lang.err())
-                })
-				}
-            break
-            case 'wikimedia': {
-            	if (!q) return reply(lang.wrongFormat(prefix))
-                reply(lang.wait())
-                wikimedia(text).then( async anu =>{
-                result = anu[Math.floor(Math.random(), anu.length)]
-                let gam = await getBuffer(result.image[0])
-				var but = [
-				{
-					"urlButton": {
-						"displayText": "Website",
-						"url": `${myweb}`
-						}
-					}
-				]
-				await alpha.send5ButImg(from, `⭔ Title : ${result.title}\n⭔ Source : ${result.source}\n⭔ Media Url : ${result.image}` , `© ${ownername}`,gam, but , { userJid: m.chat, quoted: m })
-				})
-				.catch((err) => {
-                    reply(lang.err())
-                })
-				}
-            break
+            
             
             case 'quotesanime': case 'quoteanime': {
                 reply(lang.wait())
@@ -2153,14 +2092,6 @@ sendFileFromUrl(from, to, lang.ok(), m)
                 })
 }
 	break
-case 'hentai': {
-			if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-                reply(lang.wait())
-                anu = await hentai()
-                result = anu[Math.floor(Math.random(), anu.length)]
-                alpha.sendMessage(m.chat, { video: { url: result.video_1 }, caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.category}\n⭔ Mimetype : ${result.type}\n⭔ Views : ${result.views_count}\n⭔ Shares : ${result.share_count}\n⭔ Source : ${result.link}\n⭔ Media Url : ${result.video_1}` }, { quoted: m })
-            }
-            break
 case 'solog': case 'cuddle': case 'cum': case 'les': case 'erokemo': case 'bj': case 'pwankg': case 'pat': case 'poke': case 'feed': case 'nsfw_neko_gif': case 'pussy': case 'feetg': case 'baka': case 'hug': case 'tickle': case 'spank': case 'kuni': case 'classic': case 'boobs': case 'anal': case 'ngif':
 		if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
 var ini_gif = await fetchJson(`https://nekos.life/api/v2/img/${command}`)
@@ -2445,19 +2376,6 @@ reply(lang.err())
 })
 }
 break
-case 'google': {
-                if (!text) return reply(`Example : ${prefix + command} Indonesia`)
-                google({'query': text}).then(res => {
-                let teks = `*Google Search*\n_Query : ${text}_\n\n`
-                for (let g of res) {
-                teks += `*Title* : ${g.title}\n`
-                teks += `*Description* : ${g.snippet}\n`
-                teks += `*Link* : ${g.link}\n\n----------------------------------------\n\n`
-                } 
-                reply(teks)
-                })
-                }
-                break
  default:
 if (budy.startsWith('=>')) {
 if (!m.key.fromMe && !isCreator) return reply(mess.owner)

@@ -2090,6 +2090,43 @@ reply(lang.err())
             if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
             alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=sayajiro&text=${text}` } })
             break
+// TEXTPROME
+            case 'blackpink':
+        case 'neon':
+        case 'greenneon':
+        case 'advanceglow':
+        case 'futureneon':
+        case 'sandwriting':
+        case 'sandsummer':
+        case 'sandengraved':
+        case 'metaldark':
+        case 'neonlight':
+        case 'holographic':
+        case 'text1917':
+        case 'minion':
+        case 'deluxesilver':
+        case 'newyearcard':
+        case 'bloodfrosted':
+        case 'halloween':
+        case 'jokerlogo':
+        case 'fireworksparkle':
+        case 'natureleaves':
+        case 'bokeh':
+        case 'toxic':
+        case 'strawberry':
+        case 'box3d':
+        case 'roadwarning':
+        case 'breakwall':
+        case 'icecold':
+        case 'luxury':
+        case 'cloud':
+        case 'summersand':
+        case 'horrorblood':
+        case 'thunder': {
+                if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
+                alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=sayajiro&text=${text}` } })
+            }
+            break
 case 'asmaulhusna':{
 	var asma = await fetchJson(api('alfa', '/api/islam/'+command, {}, 'apikey'))
 	.then(async data =>{

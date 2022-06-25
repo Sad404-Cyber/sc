@@ -2124,7 +2124,7 @@ reply(lang.err())
         case 'horrorblood':
         case 'thunder': {
                 if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
-                alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=sayajiro&text=${text}` } })
+                alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/textprome/${command}?apikey=sayajiro&text=${text}` } })
             }
             break
 case 'asmaulhusna':{

@@ -618,6 +618,23 @@ wa.me/${ownernomer}
     `
 }
 
+exports.tos = () => {
+    return `
+*-------「 DONATE 」 -------*
+
+Hai kak ☺️ 
+Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
+
+Berapapun donasi kalian akan sangat berarti 👍
+
+Thanks!
+
+Contact person Owner:
+wa.me/${ownernomer}
+
+    `
+}
+
 exports.info = (prefix) =>{
 	return`╭─❒ 「 Bot Info 」 
 ▸ #owner

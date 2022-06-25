@@ -920,38 +920,38 @@ break
         case 'playstore':
             if (args.length == 0) return reply(`Example: ${prefix + command} telegram`)
             var { data } = await axios.get(`https://api.lolhuman.xyz/api/playstore?apikey=${apikey}&query=${full_args}`)
-            var text = 'Play Store Search : \n'
+            var st = 'Play Store Search : \n'
             for (var x of data.result) {
-                text += `Name : ${x.title}\n`
-                text += `ID : ${x.appId}\n`
-                text += `Developer : ${x.developer}\n`
-                text += `Link : ${x.url}\n`
-                text += `Price : ${x.priceText}\n`
-                text += `Price : ${x.price}\n\n`
+                st += `Name : ${x.title}\n`
+                st += `ID : ${x.appId}\n`
+                st += `Developer : ${x.developer}\n`
+                st += `Link : ${x.url}\n`
+                st += `Price : ${x.priceText}\n`
+                st += `Price : ${x.price}\n\n`
             }
             reply(text)
             break
         case 'shopee':
             if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
             var { data } = await axios.get(`https://api.lolhuman.xyz/api/shopee?apikey=${apikey}&query=${full_args}`)
-            var text = 'Shopee Search : \n'
+            var pe = 'Shopee Search : \n'
             for (var x of data.result) {
-                text += `Name : ${x.name}\n`
-                text += `Terjual : ${x.sold}\n`
-                text += `Stock : ${x.stock}\n`
-                text += `Lokasi : ${x.shop_loc}\n`
-                text += `Link : ${x.link_produk}\n\n`
+                pe += `Name : ${x.name}\n`
+                pe += `Terjual : ${x.sold}\n`
+                pe += `Stock : ${x.stock}\n`
+                pe += `Lokasi : ${x.shop_loc}\n`
+                pe += `Link : ${x.link_produk}\n\n`
             }
             reply(text)
             break
         case 'google':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             var { data } = await axios.get(`https://api.lolhuman.xyz/api/gsearch?apikey=${apikey}&query=${full_args}`)
-            var text = 'Google Search : \n'
+            var gog = 'Google Search : \n'
             for (var x of data.result) {
-                text += `Title : ${x.title}\n`
-                text += `Link : ${x.link}\n`
-                text += `Desc : ${x.desc}\n\n`
+                gog += `Title : ${x.title}\n`
+                gog += `Link : ${x.link}\n`
+                gog += `Desc : ${x.desc}\n\n`
             }
             reply(text)
             break

@@ -102,7 +102,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #ping
 ▸ #runtime
 ▸ #botstatus
-╰❒ ${prefix}donate
+╰❒ ▸ #donate
 
 
 ╭─❒ 「 Owner 」 
@@ -133,7 +133,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #self
 ▸ #public [only bot]
 ▸ #del [reply pesan bot]
-╰❒ ${prefix}setppbot [reply image]
+╰❒ ▸ #setppbot [reply image]
 
 ╭─❒ 「 Store Menu 」
 ▸ #list
@@ -147,7 +147,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #kurang
 ▸ #kalkulator
 ▸ #proses
-╰❒ ${prefix}done [surah|ayat]
+╰❒ ▸ #done [surah|ayat]
 
 
 ╭─❒ 「 Database 」 
@@ -161,7 +161,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #addmsg [nama file]
 ▸ #getmsg [nama file]
 ▸ #listmsg
-╰❒ ${prefix}delmsg [nama file]
+╰❒ ▸ #delmsg [nama file]
 
 
 ╭─❒ 「 Group 」 
@@ -181,24 +181,24 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #take packname|author
 ▸ #group [open/close]
 ▸ #tagall [text]
-╰❒ ${prefix}hidetag [text]
+╰❒ ▸ #hidetag [text]
 
 ╭─❒ 「 Anime 」 
 ▸ #quotesanime
 ▸ #anime [query]
 ▸ #manga [query]
-╰❒ ${prefix}character [query]
+╰❒ ▸ #character [query]
 
 ╭─❒ 「 Tag 」 
 ▸ #stickertag
 ▸ #videotag [query]
 ▸ #vntag [query]
-╰❒ ${prefix}imagetag [query]
+╰❒ ▸ #imagetag [query]
 
 ╭─❒ 「 Stalking 」 
 ▸ #igstalk [username]
 ▸ #ghstalk [username]
-╰❒ ${prefix}ytstalk [channel]
+╰❒ ▸ #ytstalk [channel]
 
 
 ╭─❒ 「 Search 」 
@@ -210,7 +210,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #wattpad [query]
 ▸ #webtoons [query]
 ▸ #drakor [query]
-╰❒ ${prefix}pinterest [query]
+╰❒ ▸ #pinterest [query]
 
 
 ╭─❒ 「 Converter 」
@@ -221,7 +221,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #tourl [image/video/stiker]
 ▸ #togif [sticker]
 ▸ #tomp4 [sticker]
-╰❒${prefix}toimg [reply sticker]
+╰❒▸ #toimg [reply sticker]
 
 
 ╭─❒ 「 Image Effect 」 
@@ -258,7 +258,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #challenger [reply image/stiker]
 ▸ #burn [reply image/stiker]
 ▸ #brazzers [reply image/stiker]
-╰❒ ${prefix}beautiful [reply image/stiker]
+╰❒ ▸ #beautiful [reply image/stiker]
 
 
 ╭─❒ 「 Sticker Effect 」 
@@ -280,30 +280,30 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #greyscale [reply image/stiker]
 ▸ #threshold [reply image/stiker]
 ▸ #brightness [reply image/stiker]
-╰❒ ${prefix}invertgreyscale [reply image/stiker]
+╰❒ ▸ #invertgreyscale [reply image/stiker]
 
 
 ╭─❒ 「 Download 」 
-${prefix}ytplay
-${prefix}ytsearch
-${prefix}ytmp3
-${prefix}ytmp4
-${prefix}telesticker
-${prefix}tiktoknowm
-${prefix}tiktokmusic
-${prefix}spotify
-${prefix}spotifysearch
-${prefix}jooxplay
-${prefix}igdl
-${prefix}igdl2
-${prefix}twtdl
-${prefix}fbdl
-${prefix}zippyshare
-${prefix}pinterest
-${prefix}pinterest2
-${prefix}pinterestdl
-${prefix}pixiv
-${prefix}pixivdl
+▸ #ytplay
+▸ #ytsearch
+▸ #ytmp3
+▸ #ytmp4
+▸ #telesticker
+▸ #tiktoknowm
+▸ #tiktokmusic
+▸ #spotify
+▸ #spotifysearch
+▸ #jooxplay
+▸ #igdl
+▸ #igdl2
+▸ #twtdl
+▸ #fbdl
+▸ #zippyshare
+▸ #pinterest
+▸ #pinterest2
+▸ #pinterestdl
+▸ #pixiv
+▸ #pixivdl
 ╰❒ 
 
 ╭─❒ 「 Primbon 」
@@ -336,7 +336,7 @@ ${prefix}pixivdl
 ▸ #memancing
 ▸ #masasubur
 ▸ #zodiak 
-╰❒ ${prefix}shio [query]
+╰❒ ▸ #shio [query]
 
 ╭─❒ 「 Random Anime 」
 ▸ #loli
@@ -369,7 +369,7 @@ ${prefix}pixivdl
 ▸ #wink
 ▸ #poke
 ▸ #dance
-╰❒ ${prefix}cringe
+╰❒ ▸ #cringe
 
 ╭─❒ 「 Nsfw & Sfw 」
 ▸ #ahegao
@@ -449,7 +449,7 @@ ${prefix}pixivdl
 ▸ #anal
 ▸ #ngif
 ▸ #cuddle
-╰❒ ${prefix}zettai
+╰❒ ▸ #zettai
 
 ╭─❒ 「 Ephoto360 Menu 」
 ▸ #wetglass
@@ -563,7 +563,7 @@ ${prefix}pixivdl
 ▸ #tebak [option]
 ▸ #tekateki
 ▸ #susunkata
-╰❒ ${prefix}caklontong
+╰❒ ▸ #caklontong
 
 
 ╭─❒ 「 Asupan Menu 」
@@ -588,7 +588,7 @@ ${prefix}pixivdl
 ▸ #geayubi
 ▸ #santuy
 ▸ #ukhty
-╰❒ ${prefix}syifa
+╰❒ ▸ #syifa
 
 ╭─❒ 「 Telegram Sticker 」
 ▸ #awoawo
@@ -611,7 +611,7 @@ ${prefix}pixivdl
 ▸ #popoci
 ▸ #sponsbob
 ▸ #kawan_sponsbob
-╰❒ ${prefix}tyni
+╰❒ ▸ #tyni
 
 ╭─❒ 「 Random Cewe 」
 ▸ #china 
@@ -624,7 +624,7 @@ ${prefix}pixivdl
 ▸ #jenni 
 ▸ #jiso 
 ▸ #lisa  
-╰❒ ${prefix}rose
+╰❒ ▸ #rose
 
 ╭─❒ 「 TqTo 」 
 ▸ My God
@@ -665,7 +665,7 @@ Sanksi: *PERMANENT BLOCK*
 ➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
 
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
+Jika sudah dipahami rules-nya, silakan ketik *▸ #allmenu* untuk memulai!
 
 ⚠️ Segala kebijakan dan ketentuan AbdillahBotz di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
 
@@ -716,7 +716,7 @@ exports.info = (prefix) =>{
 ▸ #ping
 ▸ #runtime
 ▸ #botstatus
-╰❒ ${prefix}donate
+╰❒ ▸ #donate
 `}
 
 exports.ownermenu = (prefix) =>{
@@ -748,7 +748,7 @@ return`╭─❒ 「 Owner 」
 ▸ #self
 ▸ #public [only bot]
 ▸ #del [pesan bot]
-╰❒ ${prefix}setppbot [reply image]
+╰❒ ▸ #setppbot [reply image]
 `}
 
 exports.database = (prefix) =>{
@@ -763,7 +763,7 @@ exports.database = (prefix) =>{
 ▸ #addmsg [nama file]
 ▸ #getmsg [nama file]
 ▸ #listmsg
-╰❒ ${prefix}delmsg [nama file]
+╰❒ ▸ #delmsg [nama file]
 `}
 
 exports.group = (prefix) =>{
@@ -784,7 +784,7 @@ exports.group = (prefix) =>{
 ▸ #take packname|author
 ▸ #group [open/close]
 ▸ #tagall [text]
-╰❒ ${prefix}hidetag [text]
+╰❒ ▸ #hidetag [text]
 `}
 
 exports.anime = (prefix) =>{
@@ -792,7 +792,7 @@ exports.anime = (prefix) =>{
 ▸ #quotesanime
 ▸ #anime [query]
 ▸ #manga [query]
-╰❒ ${prefix}character [query]
+╰❒ ▸ #character [query]
 `}
 
 exports.tag = (prefix) =>{
@@ -800,14 +800,14 @@ exports.tag = (prefix) =>{
 ▸ #stickertag
 ▸ #videotag [query]
 ▸ #vntag [query]
-╰❒ ${prefix}imagetag [query]
+╰❒ ▸ #imagetag [query]
 `}
 
 exports.stalk = (prefix) =>{
 	return`╭─❒ 「 Stalking 」 
 ▸ #igstalk [username]
 ▸ #ghstalk [username]
-╰❒ ${prefix}ytstalk [channel]
+╰❒ ▸ #ytstalk [channel]
 `}
 
 exports.search = (prefix) =>{
@@ -820,7 +820,7 @@ exports.search = (prefix) =>{
 ▸ #wattpad [query]
 ▸ #webtoons [query]
 ▸ #drakor [query]
-╰❒ ${prefix}pinterest [query]
+╰❒ ▸ #pinterest [query]
 `}
 
 exports.converter = (prefix) =>{
@@ -832,7 +832,7 @@ exports.converter = (prefix) =>{
 ▸ #tourl [image/video]
 ▸ #togif [sticker]
 ▸ #tomp4 [sticker]
-╰❒${prefix}toimg [reply sticker]
+╰❒▸ #toimg [reply sticker]
 `}
 
 exports.effect = (prefix) =>{
@@ -870,7 +870,7 @@ exports.effect = (prefix) =>{
 ▸ #challenger [reply image/stiker]
 ▸ #burn [reply image/stiker]
 ▸ #brazzers [reply image/stiker]
-╰❒ ${prefix}beautiful [reply image/stiker]
+╰❒ ▸ #beautiful [reply image/stiker]
 `}
 
 //
@@ -894,7 +894,7 @@ exports.effect2 = (prefix) =>{
 ▸ #greyscale [reply image/stiker]
 ▸ #threshold [reply image/stiker]
 ▸ #brightness [reply image/stiker]
-╰❒ ${prefix}invertgreyscale [reply image/stiker]
+╰❒ ▸ #invertgreyscale [reply image/stiker]
 `
 }
 
@@ -924,7 +924,7 @@ return`╭─❒ 「 Download 」
 ▸ #gitclone [link repo]
 ▸ #gitrepo [username repo branch]
 ▸ #mediafire [link]
-╰❒ ${prefix}twitter link
+╰❒ ▸ #twitter link
 `
 }
 
@@ -960,7 +960,7 @@ exports.ranime = (prefix) =>{
 ▸ #wink
 ▸ #poke
 ▸ #dance
-╰❒ ${prefix}cringe
+╰❒ ▸ #cringe
 `
 }
 
@@ -1043,7 +1043,7 @@ exports.nsfw = (prefix) =>{
 ▸ #anal
 ▸ #ngif
 ▸ #cuddle
-╰❒ ${prefix}zettai
+╰❒ ▸ #zettai
 `
 }
 
@@ -1228,7 +1228,7 @@ exports.textpro = (prefix) =>{
 ▸ #3dchrome text
 ▸ #metalb2 text
 ▸ #metalg text
-╰❒ ${prefix}metalg text
+╰❒ ▸ #metalg text
 `
 }
 
@@ -1242,7 +1242,7 @@ return`╭─❒ 「 Others 」
 ▸ #kalkulator [query]
 ▸ #smeme [text]
 ▸ #smeme2 [text|text]
-╰❒ ${prefix}memegen [text|text]
+╰❒ ▸ #memegen [text|text]
 `
 }
 exports.game = (prefix) =>{
@@ -1251,7 +1251,7 @@ return`╭─❒ 「 Game Menu 」
 ▸ #tebak [option]
 ▸ #tekateki
 ▸ #susunkata
-╰❒ ${prefix}caklontong
+╰❒ ▸ #caklontong
 `
 }
 exports.asupan = (prefix) =>{
@@ -1277,7 +1277,7 @@ return`╭─❒ 「 Asupan Menu 」
 ▸ #geayubi
 ▸ #santuy
 ▸ #ukhty
-╰❒ ${prefix}syifa
+╰❒ ▸ #syifa
 `
 }
 exports.cecan = (prefix) =>{
@@ -1292,7 +1292,7 @@ return`╭─❒ 「 Random Cewe 」
 ▸ #jenni 
 ▸ #jiso 
 ▸ #lisa  
-╰❒ ${prefix}rose
+╰❒ ▸ #rose
 `
 }
 
@@ -1343,7 +1343,7 @@ exports.primbonmenu = (prefix) =>{
 ▸ #memancing
 ▸ #masasubur
 ▸ #zodiak 
-╰❒ ${prefix}shio [query]
+╰❒ ▸ #shio [query]
 `
 }
 
@@ -1502,7 +1502,7 @@ exports.logomenu = (prefix) =>{
 ▸ #bannerofpubg text|text2|background
 ▸ #mascotstyle text|text2|thumb
 ▸ #logoaccording text|text2|thumb
-╰❒ ${prefix}avataroverwatch text|text2|thumb
+╰❒ ▸ #avataroverwatch text|text2|thumb
 `
 }
 
@@ -1515,7 +1515,7 @@ exports.islammenu = (prefix) =>{
 ▸ #randomquran2
 ▸ #listsurah
 ▸ #tafsirsurah [surah]
-╰❒ ${prefix}alquranaudio [surah|ayat]
+╰❒ ▸ #alquranaudio [surah|ayat]
 `
 }
 
@@ -1532,7 +1532,7 @@ exports.storemenu = (prefix) =>{
 ▸ #kurang
 ▸ #kalkulator
 ▸ #proses
-╰❒ ${prefix}done
+╰❒ ▸ #done
 `
 }
 
@@ -1608,6 +1608,6 @@ return`╭─❒ 「 Sound Menu 」
 ▸ #sound67
 ▸ #sound68
 ▸ #sound69
-╰❒ ${prefix}sound70
+╰❒ ▸ #sound70
 `
 }

@@ -285,38 +285,21 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ▸ #zodiak 
 ╰❒ ▸ #shio [query]
 
-╭─❒ 「 Random Anime 」
+╭─❒ 「 Random Image 」
+▸ #art
+▸ #bts
+▸ #exo
+▸ #elf
 ▸ #loli
 ▸ #neko
 ▸ #waifu
+▸ #shota
+▸ #husbu
+▸ #sagiri
 ▸ #shinobu
 ▸ #megumin
-▸ #bully
-▸ #cuddle
-▸ #cry
-▸ #hug
-▸ #awoo
-▸ #kiss
-▸ #lick
-▸ #pat
-▸ #smug
-▸ #bonk
-▸ #yeet
-▸ #blush
-▸ #smile
-▸ #wave
-▸ #highfive
-▸ #handhold
-▸ #nom
-▸ #bite
-▸ #glomp
-▸ #slap
-▸ #kill
-▸ #happy
-▸ #wink
-▸ #poke
-▸ #dance
-╰❒ ▸ #cringe
+▸ #wallnime
+╰❒ 
 
 ╭─❒ 「 Nsfw & Sfw 」
 ▸ #ahegao

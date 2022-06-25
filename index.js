@@ -963,6 +963,7 @@ break
             break
 // Stalk
         case 'stalkig':
+        case 'igstalk':
             if (args.length == 0) return reply(`Example: ${prefix + command} jessnolimit`)
             axios.get(`https://api.lolhuman.xyz/api/stalkig/${args[0]}?apikey=sayajiro`).then(({ data }) => {
                 var caption = `Username : ${data.result.username}\n`
@@ -975,6 +976,7 @@ break
             })
             break
         case 'stalkgithub':
+        case 'ghstalk':
             if (args.length == 0) return reply(`Example: ${prefix + command} LoL-Human`)
             axios.get(`https://api.lolhuman.xyz/api/github/${args[0]}?apikey=sayajiro`).then(({ data }) => {
                 var caption = `Name : ${data.result.name}\n`
@@ -988,6 +990,7 @@ break
             })
             break
         case 'stalktwitter':
+        case 'twitstalk':
             if (args.length == 0) return reply(`Example: ${prefix + command} jokowi`)
             axios.get(`https://api.lolhuman.xyz/api/twitter/${args[0]}?apikey=sayajiro`).then(({ data }) => {
                 var caption = `Username : ${data.result.screen_name}\n`
@@ -1002,6 +1005,7 @@ break
             })
             break
         case 'stalktiktok':
+        case 'tiktokstalk':
             if (args.length == 0) return reply(`Example: ${prefix + command} bulansutena`)
             axios.get(`https://api.lolhuman.xyz/api/stalktiktok/${args[0]}?apikey=sayajiro`).then(({ data }) => {
                 var caption = `Username : ${data.result.username}\n`

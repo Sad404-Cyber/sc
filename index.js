@@ -1696,6 +1696,196 @@ reply(`Exif Berhasil Diubah Menjadi\n\nPackname : ${global.packname}\nAuthor : $
 }
 
 break
+
+case 'ytplay':
+            if (args.length == 0) return await reply(`Example: ${prefix + command} melukis senja`)
+            axios
+                .get(`https://api.lolhuman.xyz/api/ytsearch?apikey=${apikey}&query=${full_args}`)
+                .then(({ data }) => {
+                    axios.get(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${apikey}&url=https://www.youtube.com/watch?v=${data.result[0].videoId}`).then(({ data }) => {
+                        var caption = `❖ Title    : *${data.result.title}*\n`
+                        caption += `❖ Size     : *${data.result.size}*`
+                        sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                            sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                        })
+                    })
+                })
+                .catch(console.error)
+            break
+        case 'ytsearch':
+            if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+            axios
+                .get(`https://api.lolhuman.xyz/api/ytsearch?apikey=${apikey}&query=${full_args}`)
+                .then(({ data }) => {
+                    var text = ''
+                    for (var x of data.result) {
+                        text += `Title : ${x.title}\n`
+                        text += `Views : ${x.views}\n`
+                        text += `Published : ${x.published}\n`
+                        text += `Thumbnail : ${x.thumbnail}\n`
+                        text += `Link : https://www.youtube.com/watch?v=${x.videoId}\n\n`
+                    }
+                    reply(text)
+                })
+                .catch(console.error)
+            break
+        case 'ytmp3':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
+            axios
+                .get(`https://api.lolhuman.xyz/api/ytaudio2?apikey=${apikey}&url=${args[0]}`)
+                .then(({ data }) => {
+                    var caption = `❖ Title    : *${data.result.title}*\n`
+                    caption += `❖ Size     : *${data.result.size}*`
+                    sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                        sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                    })
+                })
+                .catch(console.error)
+            break
+        case 'ytmp4':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
+            axios
+                .get(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${apikey}&url=${args[0]}`)
+                .then(({ data }) => {
+                    var caption = `❖ Title    : *${data.result.title}*\n`
+                    caption += `❖ Size     : *${data.result.size}*`
+                    sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                        sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'video/mp4', fileName: `${data.result.title}.mp4` })
+                    })
+                })
+                .catch(console.error)
+            break
+        case 'telesticker':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
+            axios.get(`https://api.lolhuman.xyz/api/telestick?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                sock.sendMessage(from, { sticker: { url: data.result.sticker.random() } })
+            })
+            break
+        case 'tiktoknowm':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
+            axios.get(`https://api.lolhuman.xyz/api/tiktok?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                sock.sendMessage(from, { video: { url: data.result.link }, mimetype: 'video/mp4' })
+            })
+            break
+        case 'tiktokmusic':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
+            sock.sendMessage(from, { audio: { url: `https://api.lolhuman.xyz/api/tiktokmusic?apikey=${apikey}&url=${args[0]}` }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+            break
+        case 'spotify':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://open.spotify.com/track/0ZEYRVISCaqz5yamWZWzaA`)
+            axios.get(`https://api.lolhuman.xyz/api/spotify?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                var caption = `Title : ${data.result.title}\n`
+                caption += `Artists : ${data.result.artists}\n`
+                caption += `Duration : ${data.result.duration}\n`
+                caption += `Popularity : ${data.result.popularity}\n`
+                caption += `Preview : ${data.result.preview_url}\n`
+                sock.sendMessage(from, { image: { url: data.result.thumbnail }, caption }).then(() => {
+                    sock.sendMessage(from, { audio: { url: data.result.link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                })
+            })
+            break
+        case 'spotifysearch':
+            if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+            axios.get(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                var text = ''
+                for (var x of data.result) {
+                    text += `Title : ${x.title}\n`
+                    text += `Artists : ${x.artists}\n`
+                    text += `Duration : ${x.duration}\n`
+                    text += `Link : ${x.link}\n`
+                    text += `Preview : ${x.preview_url}\n\n\n`
+                }
+                reply(text)
+            })
+            break
+        case 'jooxplay':
+            if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
+            axios.get(`https://api.lolhuman.xyz/api/jooxplay?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                var caption = `Title : ${data.result.info.song}\n`
+                caption += `Artists : ${data.result.info.singer}\n`
+                caption += `Duration : ${data.result.info.duration}\n`
+                caption += `Album : ${data.result.info.album}\n`
+                caption += `Uploaded : ${data.result.info.date}\n`
+                caption += `Lirik :\n ${data.result.lirik}\n`
+                sock.sendMessage(from, { image: { url: data.result.image }, caption }).then(() => {
+                    sock.sendMessage(from, { audio: { url: data.result.audio[0].link }, mimetype: 'audio/mp4', fileName: `${data.result.title}.mp3`, ptt: true })
+                })
+            })
+            break
+        case 'igdl':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://www.instagram.com/p/CJ8XKFmJ4al/?igshid=1acpcqo44kgkn`)
+            axios.get(`https://api.lolhuman.xyz/api/instagram?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                var url = data.result
+                if (url.includes('.mp4')) {
+                    sock.sendMessage(from, { video: { url }, mimetype: 'video/mp4' })
+                } else {
+                    sock.sendMessage(from, { image: { url } })
+                }
+            })
+            break
+        case 'igdl2':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://www.instagram.com/p/CJ8XKFmJ4al/?igshid=1acpcqo44kgkn`)
+            axios.get(`https://api.lolhuman.xyz/api/instagram2?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                for (var x of data.result) {
+                    if (x.includes('.mp4')) {
+                        sock.sendMessage(from, { video: { url: x }, mimetype: 'video/mp4' })
+                    } else {
+                        sock.sendMessage(from, { image: { url: x } })
+                    }
+                }
+            })
+            break
+        case 'twtdl':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`)
+            axios.get(`https://api.lolhuman.xyz/api/twitter?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                sock.sendMessage(from, { video: { url: data.result.link[data.result.link.length - 1].link }, mimetype: 'video/mp4' })
+            })
+            break
+        case 'fbdl':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://id-id.facebook.com/SamsungGulf/videos/video-bokeh/561108457758458/`)
+            axios.get(`https://api.lolhuman.xyz/api/facebook?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                sock.sendMessage(from, { video: { url: data.result }, mimetype: 'video/mp4' })
+            })
+            break
+        case 'zippyshare':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://www51.zippyshare.com/v/5W0TOBz1/file.html`)
+            axios.get(`https://api.lolhuman.xyz/api/zippyshare?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                var text = `File Name : ${data.result.name_file}\n`
+                text += `Size : ${data.result.size}\n`
+                text += `Date Upload : ${data.result.date_upload}\n`
+                text += `Download Url : ${data.result.download_url}`
+                reply(text)
+            })
+            break
+        case 'pinterest':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            axios.get(`https://api.lolhuman.xyz/api/pinterest?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                sock.sendMessage(from, { image: { url: data.result } })
+            })
+            break
+        case 'pinterest2':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            axios.get(`https://api.lolhuman.xyz/api/pinterest2?apikey=${apikey}&query=${full_args}`).then(({ data }) => {
+                for (var x of data.result.slice(0, 5)) {
+                    sock.sendMessage(from, { image: { url: x } })
+                }
+            })
+            break
+        case 'pinterestdl':
+            if (args.length == 0) return reply(`Example: ${prefix + command} https://id.pinterest.com/pin/696580267364426905/`)
+            axios.get(`https://api.lolhuman.xyz/api/pinterestdl?apikey=${apikey}&url=${args[0]}`).then(({ data }) => {
+                sock.sendMessage(from, { image: { url: data.result[0] } })
+            })
+            break
+        case 'pixiv':
+            if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixiv?apikey=${apikey}&query=${full_args}` } })
+            break
+        case 'pixivdl':
+            if (args.length == 0) return reply(`Example: ${prefix + command} 63456028`)
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/pixivdl/${args[0]}?apikey=${apikey}` } })
+            break
+
 			case 'nomerhoki': case 'nomorhoki': {
                 if (!Number(text)) throw `Example : ${prefix + command} 887435047326`
                 let anu = await primbon.nomer_hoki(Number(text))

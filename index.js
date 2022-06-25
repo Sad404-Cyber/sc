@@ -896,7 +896,7 @@ break
            // Searching
         case 'gimage':
         case 'konachan':
-        case 'wallpapersearch':
+        case 'wallpaper':
             if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
             if (command === 'wallpapersearch') {
                 command = 'wallpaper'

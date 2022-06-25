@@ -893,41 +893,7 @@ break
             alpha.sendMessage(m.chat, {audio: audio, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
             }
             break        
-            case 'webtonsearch': case 'webtoon':
-                if (!q) return reply(lang.wrongFormat(prefix))
-                await reply(lang.wait())
-                zee.Webtoons(q).then(async data => {
-                    let txt = `*------「 WEBTOONS-SEARCH 」------*\n\n`
-                    for (let i of data) {
-                        txt += `*📫 Title :* ${i.judul}\n`
-                        txt += `*👍🏻 Like :* ${i.like}\n`
-                        txt += `*🤴🏻 Creator :* ${i.creator}\n`
-                        txt += `*🎥 Genre :* ${i.genre}\n`
-                        txt += `*📚 Url :* ${i.url}\n ----------------------------------------------------------\n`
-                    }
-                    await reply(txt)
-                })
-                .catch((err) => {
-                    reply(lang.err())
-                })
-            break
-            case 'drakor':
-                if (!q) return reply(lang.wrongFormat(prefix))
-                await reply(lang.wait())
-                zee.Drakor(`${text}`).then(async data => {
-                    let txt = `*-----「 DRAKOR-SEARCH 」-----*\n\n`
-                    for (let i of data) {
-                        txt += `*📫 Title :* ${i.judul}\n`
-                        txt += `*📆 Years :* ${i.years}\n`
-                        txt += `*🎥 Genre :* ${i.genre}\n`
-                        txt += `*📚 Url :* ${i.url}\n-----------------------------------------------------\n`
-                    }
-                    await sendFileFromUrl(from,data[0].thumbnail,txt,m)
-                })
-                .catch((err) => {
-                    reply(lang.err())
-                })
-            break
+           
             case 'anime':{
                 if (!q) return reply(lang.wrongFormat(prefix))
                 await reply(lang.wait())

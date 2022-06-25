@@ -2182,36 +2182,75 @@ sendFileFromUrl(from, to, lang.ok(), m)
                 })
 }
 	break
-case 'solog': case 'cuddle': case 'cum': case 'les': case 'erokemo': case 'bj': case 'pwankg': case 'pat': case 'poke': case 'feed': case 'nsfw_neko_gif': case 'pussy': case 'feetg': case 'baka': case 'hug': case 'tickle': case 'spank': case 'kuni': case 'classic': case 'boobs': case 'anal': case 'ngif':
-		if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-var ini_gif = await fetchJson(`https://nekos.life/api/v2/img/${command}`)
-		sendFileFromUrl(from,ini_gif.url,lang.ok(),m)
-		.catch((err) => {
-                    reply(lang.err())
-                })
-        break
-		
-case 'cuddle':case 'feed':case 'foxgirl':case 'kemonomimi2':case 'woof':case 'holo2':case 'hug':case 'kiss':case 'lizard':case 'meowi':case 'neko2':case 'pat':case 'poke':case 'slap':case 'tickle':{
-if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-reply(lang.wait())
-let to = global.api('alfa', '/api/sfw/'+command, {}, 'apikey')
-sendFileFromUrl(from, to, lang.ok(), m)
-.catch((err) => {
-                    reply(lang.err())
-                })
-}
- break     
- 
-case 'baka':case 'smug':case 'neko_sfw':case 'hentai_gif':case 'spank':case 'blowjob':case 'cumarts':case 'eroyuri':case 'eroneko':case 'erokemonomimi':case 'erokitsune':case 'ero':case 'feet':case 'erofeet':case 'feetgif':case 'femdom':case 'futanari':case 'hentai':case 'holoero':case 'holo':case 'keta':case 'kitsune':case 'kemonomimi':case 'pussyart':case 'pussywankgif':case 'girl_solo':case 'girl_solo_gif':case 'tits':case 'trap':case 'yuri':case 'avatar2':case 'anal':case 'bj':case 'boobs':case 'classic':case 'cumsluts':case 'kuni':case 'lesbian':case 'neko':case 'neko_gif':case 'ahegao':case 'bdsm':case 'cuckold':case 'cum':case 'foot':case 'gangbang':case 'glasses':case 'jahy':case 'masturbation':case 'nsfw_neko':case 'orgy':case 'panties':case 'tentacles':case 'thighs':case 'zettai':{
-if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
-reply(lang.wait())
-let to = global.api('alfa', '/api/nsfw/'+command, {}, 'apikey')
-sendFileFromUrl(from, to, lang.ok(), m)
-.catch((err) => {
-                    reply(lang.err())
-                })
-}
-break
+
+case 'chiisaihentai':
+        case 'trap':
+        case 'blowjob':
+        case 'yaoi':
+        case 'ecchi':
+        case 'hentai':
+        case 'ahegao':
+        case 'hololewd':
+        case 'sideoppai':
+        case 'animefeets':
+        case 'animebooty':
+        case 'animethighss':
+        case 'hentaiparadise':
+        case 'animearmpits':
+        case 'hentaifemdom':
+        case 'lewdanimegirls':
+        case 'biganimetiddies':
+        case 'animebellybutton':
+        case 'hentai4everyone':
+            sock.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${apikey}` } })
+            break
+
+        case 'bj':
+        case 'ero':
+        case 'cum':
+        case 'feet':
+        case 'yuri':
+        case 'trap':
+        case 'lewd':
+        case 'feed':
+        case 'eron':
+        case 'solo':
+        case 'gasm':
+        case 'poke':
+        case 'anal':
+        case 'holo':
+        case 'tits':
+        case 'kuni':
+        case 'kiss':
+        case 'erok':
+        case 'smug':
+        case 'baka':
+        case 'solog':
+        case 'feetg':
+        case 'lewdk':
+        case 'waifu':
+        case 'pussy':
+        case 'femdom':
+        case 'cuddle':
+        case 'hentai':
+        case 'eroyuri':
+        case 'cum_jpg':
+        case 'blowjob':
+        case 'erofeet':
+        case 'holoero':
+        case 'classic':
+        case 'erokemo':
+        case 'fox_girl':
+        case 'futanari':
+        case 'lewdkemo':
+        case 'wallpaper':
+        case 'pussy_jpg':
+        case 'kemonomimi':
+        case 'nsfw_avatar':
+           if (!db.data.chats[m.chat].nsfw) return reply('Fitur nsfw belum di aktifkan')
+            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random2/${command}?apikey=${apikey}` } })
+            break
+
 //sound
 case 'sound71': case 'sound72': case 'sound73': case 'sound74': case 'sound75': case 'sound1': case 'sound2': case 'sound3': case 'sound4': case 'sound5': case 'sound6': case 'sound7': case 'sound8': case 'sound9': case 'sound10': case 'sound11': case 'sound12': case 'sound13': case 'sound14': case 'sound15': case 'sound16': case 'sound17': case 'sound18 ': case 'sound19': case 'sound20': case 'sound21': case 'sound22': case 'sound23': case 'sound24': case 'sound25': case 'sound26': case 'sound27': case 'sound28': case 'sound29': case 'sound30': case 'sound31': case 'sound32': case 'sound33': case 'sound34': case 'sound35': case 'sound36': case 'sound37': case 'sound38': case 'sound39': case 'sound40': case 'sound41': case 'sound42': case 'sound43': case 'sound44': case 'sound45': case 'sound46': case 'sound47': case 'sound48': case 'sound49': case 'sound50': case 'sound51': case 'sound52': case 'sound53': case 'sound54': case 'sound55': case 'sound56': case 'sound57': case 'sound58': case 'sound59': case 'sound60': case 'sound61': case 'sound62': case 'sound63': case 'sound64': case 'sound65': case 'sound66': case 'sound67': case 'sound68': case 'sound69': case 'sound70':{
 reply(lang.wait())

@@ -1758,6 +1758,13 @@ case 'ytplay':
                 })
                 .catch(console.error)
             break
+case 'attp': case 'ttp': case 'attp2': case 'ttp2': case 'ttp3': case 'ttp4': {
+           if (!text) return reply(`Kirim perintah ${prefix + command} kont`)  
+           axios.get(`https://api.lolhuman.xyz/api/${command}?apikey=sayajiro&text=${text}`).then(({ data }) => {
+                alpha.sendMessage(from, { sticker: { url: data() } })
+            })
+         }
+         break
         case 'ytmp3':
             if (args.length == 0) return reply(`Example: ${prefix + command} https://www.youtube.com/watch?v=qZIQAk-BUEc`)
             axios
